@@ -23,66 +23,66 @@ import Footer from './components/shared/Footer'
 
 const appRouter = createBrowserRouter([
   {
-    path: '/',
-    element: <Home />
+    path:'/',
+    element:<Home/>
   },
   {
-    path: '/login',
-    element: <Login />
-
+    path:'/login',
+    element:<Login/>
+    
   },
   {
-    path: '/signup',
-    element: <SignUp />
+    path:'/signup',
+    element:<SignUp/>
   },
   {
-    path: '/jobs',
-    element: <Jobs />
+    path:'/jobs',
+    element:<Jobs/>
   },
   {
-    path: '/details/:id',
-    element: <Detailsjob />
+    path:'/details/:id',
+    element:<Detailsjob/>
   },
   {
-    path: '/browes',
-    element: <Browes />
+    path:'/browes',
+    element:<Browes/>
   },
   {
-    path: '/profile',
-    element: <Profile />
+    path:'/profile',
+    element:<Profile/>
   },
-
+  
   {
-    path: '/admin/recruter',
-    element: <RecruiterHome />
-  },
-  {
-    path: '/admin/companies',
-    element: <CompanyHomePage />
+    path:'/admin/recruter',
+    element:<RecruiterHome/>
   },
   {
-    path: '/registerCompany',
-    element: <Companyregister />
+    path:'/admin/companies',
+    element:<CompanyHomePage/>
+  },
+   {
+    path:'/registerCompany',
+    element:<Companyregister/>
   },
   {
-    path: '/companies',
-    element: <Companies />
+    path:'/companies',
+    element:<Companies/>
   },
   {
-    path: '/admin/companies/:id',
-    element: <CompanySetUpr />
+    path:'/admin/companies/:id',
+    element:<CompanySetUpr/>
   },
   {
-    path: '/admin/jobs',
-    element: <JobsAdminPage />
+    path:'/admin/jobs',
+    element:<JobsAdminPage/>
   },
   {
-    path: '/admin/newjob',
-    element: <CompanyNewJob />
+    path:'/admin/newjob',
+    element:<CompanyNewJob/>
   },
   {
-    path: '/admin/jobs/:id/applicants',
-    element: <CompanyJobApplications />
+    path:'/admin/jobs/:id/applicants',
+    element:<CompanyJobApplications/>
   },
 ])
 
@@ -91,10 +91,10 @@ function App() {
 
   return (
     <>
-
-      <RouterProvider router={appRouter} />
-
-
+    
+     <RouterProvider router={appRouter}/>
+    
+     
     </>
   )
 }
