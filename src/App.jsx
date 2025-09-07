@@ -11,7 +11,7 @@ import Browes from './components/Browes'
 import Profile from './components/Profile'
 import Detailsjob from './components/Detailsjob'
 import Companies from './components/companyHr/Companies'
-import CompanyHomePage from './components/companyHr/CompanyhomePage'
+import CompanyHomePage from "./components/companyHr/CompanyHomePage";
 import Companyregister from './components/companyHr/Companyregister'
 import CompanySetUpr from './components/companyHr/CompanySetUp'
 import JobsAdminPage from './components/companyHr/JobsAdminPage'
@@ -23,66 +23,66 @@ import Footer from './components/shared/Footer'
 
 const appRouter = createBrowserRouter([
   {
-    path:'/',
-    element:<Home/>
+    path: '/',
+    element: <Home />
   },
   {
-    path:'/login',
-    element:<Login/>
-    
+    path: '/login',
+    element: <Login />
+
   },
   {
-    path:'/signup',
-    element:<SignUp/>
+    path: '/signup',
+    element: <SignUp />
   },
   {
-    path:'/jobs',
-    element:<Jobs/>
+    path: '/jobs',
+    element: <Jobs />
   },
   {
-    path:'/details/:id',
-    element:<Detailsjob/>
+    path: '/details/:id',
+    element: <Detailsjob />
   },
   {
-    path:'/browes',
-    element:<Browes/>
+    path: '/browes',
+    element: <Browes />
   },
   {
-    path:'/profile',
-    element:<Profile/>
+    path: '/profile',
+    element: <Profile />
   },
-  
+
   {
-    path:'/admin/recruter',
-    element:<RecruiterHome/>
-  },
-  {
-    path:'/admin/companies',
-    element:<CompanyHomePage/>
-  },
-   {
-    path:'/registerCompany',
-    element:<Companyregister/>
+    path: '/admin/recruter',
+    element: <RecruiterHome />
   },
   {
-    path:'/companies',
-    element:<Companies/>
+    path: '/admin/companies',
+    element: <CompanyHomePage />
   },
   {
-    path:'/admin/companies/:id',
-    element:<CompanySetUpr/>
+    path: '/registerCompany',
+    element: <Companyregister />
   },
   {
-    path:'/admin/jobs',
-    element:<JobsAdminPage/>
+    path: '/companies',
+    element: <Companies />
   },
   {
-    path:'/admin/newjob',
-    element:<CompanyNewJob/>
+    path: '/admin/companies/:id',
+    element: <CompanySetUpr />
   },
   {
-    path:'/admin/jobs/:id/applicants',
-    element:<CompanyJobApplications/>
+    path: '/admin/jobs',
+    element: <JobsAdminPage />
+  },
+  {
+    path: '/admin/newjob',
+    element: <CompanyNewJob />
+  },
+  {
+    path: '/admin/jobs/:id/applicants',
+    element: <CompanyJobApplications />
   },
 ])
 
@@ -91,10 +91,10 @@ function App() {
 
   return (
     <>
-    
-     <RouterProvider router={appRouter}/>
-    
-     
+
+      <RouterProvider router={appRouter} />
+
+
     </>
   )
 }
