@@ -164,10 +164,10 @@ const CompanyJobApplications = ({ jobs }) => {
                                                 <td className="p-3">
                                                     <span
                                                         className={`inline-flex items-center gap-1 px-3 py-1 pb-2 rounded-md font-semibold text-sm ${app.status === "pending"
-                                                                ? "bg-gray-200 text-violet-900"
-                                                                : app.status === "accepted"
-                                                                    ? "bg-green-100 text-green-700"
-                                                                    : "bg-red-100 text-red-700"
+                                                            ? "bg-gray-200 text-violet-900"
+                                                            : app.status === "accepted"
+                                                                ? "bg-green-100 text-green-700"
+                                                                : "bg-red-100 text-red-700"
                                                             }`}
                                                     >
                                                         {app.status === "accepted" && (
