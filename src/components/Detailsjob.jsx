@@ -25,6 +25,11 @@ const Detailsjob = () => {
 
 
     const appliedJobHolder = async () => {
+        if (!user) {
+            toast.error("Please login first to apply for this job");
+            return; 
+        }
+
         try {
             const res = await axios.get(
                 `${APPLICATION_JOB_API_POINT}/apply/${jobId}`, { withCredentials: true });
@@ -69,7 +74,7 @@ const Detailsjob = () => {
         <>
             <Navbar />
 
-           <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="border-1 shadow-xl rounded-md w-[95%] md:w-3/4 pt-4 md:py-5 px-2 md:px-5 my-5 mx-auto mt-10">
+            <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="border-1 shadow-xl rounded-md w-[95%] md:w-3/4 pt-4 md:py-5 px-2 md:px-5 my-5 mx-auto mt-10">
                 <div className="flex md:items-center flex-row justify-between md:flex-row  md:justify-between border-b-2 border-sky-800 pb-2">
                     <div className="flex  md:justify-center  items-center ">
                         <Avatar>
@@ -120,7 +125,7 @@ const Detailsjob = () => {
                         <span className='text-xs font-semibold text-slate-500'>
                             {singleJob?.company?.createdAt && singleJob.company.createdAt.split("T")[0]}
                         </span>
-                        </div>
+                    </div>
                 </div>
             </motion.div>
 
