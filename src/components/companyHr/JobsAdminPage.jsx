@@ -11,6 +11,7 @@ import { CiEdit } from "react-icons/ci";
 import { AiTwotoneDelete } from "react-icons/ai";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { FaEye } from "react-icons/fa6";
+import Footer from "../shared/Footer";
 
 
 
@@ -152,6 +153,7 @@ const JobsAdminPage = () => {
                     </table>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }

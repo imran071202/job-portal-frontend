@@ -4,6 +4,7 @@ import Job from './Job'
 import { useDispatch, useSelector } from 'react-redux'
 import useGetAllJobs from '@/hooks/useGetAllJobs'
 import { setSearchQuery } from '@/redux/jobSlice'
+import Footer from './shared/Footer'
 
 const Browse = () => {
 
@@ -30,6 +31,7 @@ const Browse = () => {
                     ))}
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

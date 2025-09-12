@@ -16,6 +16,7 @@ import {
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { CiEdit } from "react-icons/ci";
 import { AiTwotoneDelete } from "react-icons/ai";
+import Footer from "../shared/Footer";
 
 export default function CompanyHomePage() {
 
@@ -166,6 +167,7 @@ export default function CompanyHomePage() {
           </table>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

@@ -7,6 +7,7 @@ import { Briefcase, Users, ClipboardList, PlusCircle } from "lucide-react"
 import Navbar from "../shared/Navbar"
 import { FaBuildingColumns } from "react-icons/fa6";
 import { motion } from "motion/react"
+import Footer from "../shared/Footer"
 
 
 const RecruiterHome = () => {
@@ -97,6 +98,7 @@ const RecruiterHome = () => {
 
         </div>
       </motion.div>
+       <Footer/>
     </>
 
   )

@@ -7,6 +7,7 @@ import AfterLoginHome from './AfterLoginPage';
 import useGetAllJobs from '@/hooks/useGetAllJobs';
 import { setSearchQuery } from '@/redux/jobSlice';
 import { motion } from "motion/react"
+import Footer from './shared/Footer';
 
 const Home = () => {
   useGetAllJobs();
@@ -149,7 +150,7 @@ const Home = () => {
           </>
         )}
       </motion.div>
-   
+   <Footer/>
     </>
   );
 };
